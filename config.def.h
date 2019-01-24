@@ -4,9 +4,11 @@
  * appearance
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+ * borderperc: percentage of cell width to use as a border
+ *		0 = no border, 100 = border width is same as cell width
  */
 char font[] = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-int borderpx = 2;
+int borderperc = 20;
 
 /*
  * What program is execed by st depends of these precedence rules:

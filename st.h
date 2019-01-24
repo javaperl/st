@@ -231,6 +231,7 @@ extern char *opt_line;
 extern char *opt_name;
 extern char *opt_title;
 extern int oldbutton;
+int borderpx;
 
 extern char *usedfont;
 extern double usedfontsize;
@@ -238,7 +239,7 @@ extern double defaultfontsize;
 
 /* config.h globals */
 extern char font[];
-extern int borderpx;
+extern int borderperc;
 extern float cwscale;
 extern float chscale;
 extern unsigned int doubleclicktimeout;
