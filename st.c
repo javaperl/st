@@ -218,6 +218,8 @@ char *opt_line  = NULL;
 char *opt_name  = NULL;
 char *opt_title = NULL;
 int oldbutton   = 3; /* button event on startup: 3 = release */
+char *cwd = NULL;
+char *plumber_cmd = plumber;
 
 static CSIEscape csiescseq;
 static STREscape strescseq;
@@ -1858,6 +1860,9 @@ strhandle(void)
 	switch (strescseq.type) {
 	case ']': /* OSC -- Operating System Command */
 		switch (par) {
+		case 7:
+			if (narg > 1 && access(strescseq.args[1], X_OK) != -1)
+				cwd = strescseq.args[1];
 		case 0:
 		case 1:
 		case 2:
