@@ -62,6 +62,29 @@ static unsigned int cursorthickness = 2;
  */
 static int bellvolume = 0;
 
+/*
+ * visual-bell timeout (set to 0 to disable visual-bell).
+ */
+static int vbelltimeout = 0;
+/*
+ * visual bell mode when enabled:
+ *   1: Inverse whole screen
+ *   2: Inverse outer (border) cells
+ *   3: Draw a filled circle.
+ */
+static int vbellmode = 1;
+/*
+ * for vbellmode == 3 (circle) the following parameters apply:
+ * - base and outline colors (colorname index - see below).
+ * - radius: relative to window width, or if negative: relative to cell-width.
+ * - position: relative to window width/height (0 and 1 are at the edges).
+ */
+static int vbellcolor = 3;
+static int vbellcolor_outline = 1;
+static float vbellradius = 0.03;
+static float vbellx = 0.5;
+static float vbelly = 0.5;
+
 /* default TERM value */
 char *termname = "st-256color";
 
