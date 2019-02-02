@@ -11,7 +11,8 @@
 /* static char *font = "DejaVu Sans Mono:pixelsize=18:antialias=true:autohint=true"; */
 /* static char *font = "Fira Mono:pixelsize=16:antialias=true:autohint=true"; */
 /* static char *font = "Droid Sans Mono:pixelsize=16:antialias=true:autohint=true"; */
-static char *font = "Inconsolata:pixelsize=16:antialias=true:autohint=true";
+/* static char *font = "Monospace:pixelsize=18:antialias=true:autohint=true";
+static char *font = "Inconsolata:pixelsize=18:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
